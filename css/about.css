@@ -1,0 +1,319 @@
+@import "common_styling.css";
+/* to the current page */
+
+.about-nav{
+    color: #ffa116!important;
+    text-decoration: underline;
+}
+@media (max-width:1023px)
+{
+    .about-nav{
+        color: #ffa116!important;
+    }
+}
+
+/* about */
+@media (min-width:1024px) {
+    #about{
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: calc(70vh);
+        width: calc(70vw);
+        align-items: center;
+        justify-content: center;
+    }
+    #hobbies,#favourites,#education,#acheivements,#strengths{
+        display: flex;
+        position: relative;
+        margin: 0 calc(1vw);
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ab-child span{
+        position: absolute;
+        display: inline;
+        left: 50%;
+        top: calc(47vh); 
+        transform: translate(-50%,-50%);
+    }
+    .about-amblem{
+        font-size: calc(3vh);
+    }
+    .fa-chess-queen{
+        color: #000;
+    }
+    .fa-heart{
+        color: #e90064;
+    }
+    .fa-school{
+        color: brown;
+    }
+    .fa-trophy{
+        color: gold;
+    }
+    .fa-dumbbell{
+        color: rgb(142, 173, 216);
+    }
+    .initial{
+        height: calc(50vh);
+        width: calc(3vw);
+        background-color: #fff;
+        border-radius: 2rem;
+        transform-style: preserve-3d;
+        transition: width 1s ease;
+    }
+    .ab-child:hover{
+        width: calc(25vw);
+    }
+    .ab-child div:nth-child(2)
+    {
+        font-size: 1em;
+        color: #000;
+        margin: 4%;
+        text-align: center;
+    }
+    .ab-child{
+        overflow: hidden;
+    }
+    #description_about1 li{
+        text-align: left;
+    }
+    #description_about1 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about2 li{
+        text-align: left;
+    }
+    #description_about2 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about2 a{
+        text-decoration: none;
+        color: #000;
+    }
+    #description_about3 li{
+        text-align: left;
+    }
+    #description_about3 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about3 a{
+        text-decoration: none;
+        color: #000;
+    }
+    #description_about4 ul li{
+        text-align: left!important;
+    }
+    #description_about4 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about4 a{
+        color: black;
+    }
+    #description_about4{
+        -ms-overflow-style : none;
+    }
+    #description_about4::-webkit-scrollbar{
+        display: none;
+    }
+    
+
+    #description_about5 ul li{
+        text-align: left!important;
+    }
+    #description_about5 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about5 a{
+        color: black;
+    }
+    #description_about5{
+        -ms-overflow-style : none;
+    }
+    #description_about5::-webkit-scrollbar{
+        display: none;
+    }
+}
+@media (max-width:1023px) {
+    #about{
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: calc(70vh);
+        width: calc(70vw);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #hobbies,#favourites,#education,#acheivements,#strengths{
+        display: flex;
+        position: relative;
+        margin: calc(2vh) 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-amblem{
+        font-size: calc(3vh);
+    }
+    .fa-chess-queen{
+        color: #000;
+    }
+    .fa-heart{
+        color: #e90064;
+    }
+    .fa-school{
+        color: brown;
+    }
+    .fa-trophy{
+        color: gold;
+    }
+    .fa-dumbbell{
+        color: rgb(142, 173, 216);
+    }
+    .initial{
+        height: calc(5vh);
+        width: calc(60vw);
+        background-color: #fff;
+        border-radius: 2rem;
+        transition: height 1s;
+    }
+    .ab-child:hover{
+        height: calc(35vh);
+    }
+    .ab-child div:nth-child(2)
+    {
+        font-size: 1em;
+        color: #000;
+        text-align: center;
+    }
+    .ab-child{
+        overflow: scroll;
+    }
+    #description_about1,#description_about2,#description_about3,#description_about4,#description_about5{
+        padding: 4%;
+        font-size: calc(3vw);
+    }
+    #description_about1 li{
+        text-align: left;
+    }
+    #description_about1 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about1{
+        -ms-overflow-style : none;
+    }
+    #description_about1::-webkit-scrollbar{
+        display: none;
+    }
+    #description_about2 li{
+        text-align: left;
+    }
+    #description_about2 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about2 a{
+        text-decoration: none;
+        color: #000;
+    }
+    #description_about2{
+        -ms-overflow-style : none;
+    }
+    #description_about2::-webkit-scrollbar{
+        display: none;
+    }
+    #description_about3 li{
+        text-align: left;
+    }
+    #description_about3 h2{
+        margin-bottom: calc(2vh);
+        /* margin-top: calc(50vw); */
+    }
+    #description_about3 a{
+        text-decoration: none;
+        color: #000;
+    }
+    #description_about3{
+        -ms-overflow-style : none;
+        min-height: 100%;
+    }
+    #description_about3::-webkit-scrollbar{
+        display: none;
+    }
+    #description_about4 ul li{
+        text-align: left!important;
+    }
+    #description_about4 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about4 a{
+        color: black;
+    }
+    #description_about4{
+        -ms-overflow-style : none;
+        min-height: 100%;
+    }
+    #description_about4::-webkit-scrollbar{
+        display: none;
+    }
+
+    #description_about5 ul li{
+        text-align: left!important;
+    }
+    #description_about5 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about5 a{
+        color: black;
+    }
+    #description_about5{
+        -ms-overflow-style : none;
+        min-height: 100%;
+    }
+    #description_about5::-webkit-scrollbar{
+        display: none;
+    }
+}
+#hobbies,#favourites,#education,#acheivements,#strengths
+{
+    animation: appearup 0.3s linear;
+}
+#bdy.light .initial{
+    background-color: black;
+}
+#bdy.light .fa-chess-queen{
+    color: white;
+}
+#bdy.light a{
+    color: white;
+}
+#bdy.light #description_about1{
+    color: white;
+}
+#bdy.light #description_about2{
+    color: white;
+}
+#bdy.light #description_about3{
+    color: white;
+}
+#bdy.light #description_about4{
+    color: white;
+}
+#bdy.light #description_about5{
+    color: white;
+}
+#bdy.light .about-nav{
+    color: black!important;
+}

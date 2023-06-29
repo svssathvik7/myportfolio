@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/736567be33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/about.css">
+    <title>Sathvik > about</title>
+</head>
+<body id="bdy" onload="initialiser_theme();">
+    <div id="loader_div">
+        <div id="load">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+  <header>
+    <nav>
+        <div id="portfolio">
+            <span>s</span>
+            <span>a</span>
+            <span>t</span>
+            <span>h</span>
+            <span>v</span>
+            <span>i</span>
+            <span>k</span>
+        </div>
+        <div id="portfolio-light">
+            <span class="logo_name">s</span>
+            <span class="logo_name">a</span>
+            <span class="logo_name">t</span>
+            <span class="logo_name">h</span>
+            <span class="logo_name">v</span>
+            <span class="logo_name">i</span>
+            <span class="logo_name">k</span>
+        </div>
+        <ul>
+            <li><a class="nav-elements home" href="index.html">Home</a></li>
+            <li><a class="nav-elements skills-nav" href="skills.html">Skills</a></li>
+            <li><a class="nav-elements projects-nav" href="projects.html">Projects</a></li>
+            <li><a class="nav-elements resources-nav" href="resources.html">Resources</a></li>
+            <li><a class="nav-elements about-nav" href="about.html">About</a></li>
+        </ul>
+        <nav-mini>
+            <div class="navbar">
+                <div class="menu-btn">
+                  <div class="btn-line"></div>
+                  <div class="btn-line"></div>
+                  <div class="btn-line"></div>
+                </div>
+            </div>   
+            <div id="mini-nav">
+                <div class="mini-nav-child">
+                    <a class="nav-elements-mini home" href="index.html">Home</a>
+                </div>
+                <div class="mini-nav-child">
+                    <a class="nav-elements-mini skills-nav" href="skills.html">Skills</a>
+                </div>
+                <div class="mini-nav-child">
+                    <a class="nav-elements-mini projects-nav" href="projects.html">Projects</a>
+                </div>
+                <div class="mini-nav-child">
+                    <a class="nav-elements-mini resources-nav" href="resources.html">Resources</a>
+                </div>
+                <div class="mini-nav-child">
+                    <a class="nav-elements-mini about-nav" href="about.html">About</a>
+                </div>
+                <div class="mini-nav-child">
+                    <div class="chat-box1">
+                        <div class="containes-chat-box">
+                            <a id="feedback-click1" href="#"><i class="fa-solid fa-comments chat-btn-fa"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav-mini>
+    </nav>
+</header>
+<div class="chat-box">
+  <div class="containes-chat-box">
+      <a id="feedback-click" href="#"><i class="fa-solid fa-comments chat-btn-fa fa-2x"></i></a>
+  </div>
+</div>
+<div class="form" id="inp-form">
+  <div class="feedback-container">
+      <span id="close_btn_feedback"><i class="fa-solid fa-xmark"></i></span>
+      <!-- <centre> -->
+          <!-- <h2 class="#feedback_heading">Feedback Form</h2> -->
+      <!-- </centre> -->
+      <form id="feedback-form" action="https://formspree.io/f/mwkjnzql" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+          <label for="profession">Profession</label>
+          <input type="text" id="profession" name="profession" required>
+          </div>
+          <div class="form-group">
+          <label for="workplace">Workplace/Study Place</label>
+          <input type="text" id="workplace" name="workplace" required>
+          </div>
+          <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+          <label for="feedback">Feedback</label>
+          <textarea id="feedback" name="feedback" required></textarea>
+          </div>
+          <div class="form-group">
+          <label for="rating">Rating</label>
+          <select id="rating" name="rating" required>
+              <option value="">Select a rating</option>
+              <option value="5">5 stars</option>
+              <option value="4">4 stars</option>
+              <option value="3">3 stars</option>
+              <option value="2">2 stars</option>
+              <option value="1">1 star</option>
+          </select>
+          </div>
+          <centre>
+              <button class="submit-btn" type="submit">Submit</button>
+          </centre>
+      </form>
+      <div id="success-message">Thank you for your feedback!</div>
+      </div>		  
+</div>
+<div class="social-media">
+  <div class="social-child"><a target="_blank" href="https://www.instagram.com/svssathvik7/"><i class="fa-brands fa-square-instagram icon"></i></a></div>
+  <div class="social-child"><a target="_blank" href="https://www.linkedin.com/in/sathvik-svs-a76596230/"><i class="fa-brands fa-linkedin icon"></i></a></div>
+  <div class="social-child"><a target="_blank" href="https://github.com/sathvikcodes"><i class="fa-brands fa-github icon"></i></a></div>
+  <div class="social-child"><a target="_blank" href="mailto:svssathvik77@gmail.com"><i class="fa-solid fa-envelope icon"></i></a></div>
+</div>
+<div id="about">
+    <div id="hobbies" class="initial ab-child">
+        <span><i class="fa-solid fa-chess-queen about-amblem" id="chess-queen"></i></span>
+        <div id="description_about1">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Playing Chess♛</li>
+                <li>Listening music🎻</li>
+                <li>Exploring new things about Space🔭</li>
+                <li>Singing🎙️</li>
+                <li>Sleeping😴🤭</li>
+            </ul>
+        </div>
+    </div>
+    <div id="favourites" class="initial ab-child">
+        <span><i class="fa-solid fa-heart about-amblem" id="heart"></i></span>
+        <div id="description_about2">
+            <h2>My favourites</h2>
+            <ul>
+                <li>Melodious music</li>
+                <li><a href="https://en.wikipedia.org/wiki/Ilaiyaraaja" target="_blank">Sri. Ilayaraja</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/S._P._Balasubrahmanyam" target="_blank">Sri. SP Balasubrahmanyam</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">Sri. APJ Abdul Kalam</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ratan_Tata" target="_blank">Sri. Ratan Tata</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/A._R._Rahman" target="_blank">Sri. AR Rahman</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="education" class="initial ab-child">
+        <span><i class="fa-sharp fa-solid fa-school about-amblem" id="school"></i></span>
+        <div id="description_about3">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    I completed my schooling up to the 10th grade at Fort City School.
+                </li>
+                <li>
+                    I completed my intermediate education in Narayana college, where I studied MPC in the 1st and 2nd years.
+                </li>
+                <li>I am currently pursuing a Bachelor of Technology degree in Computer Science and Engineering at MVGR College of Engineering, located in Vizianagaram.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="acheivements" class="initial ab-child">
+        <span><i class="fa-solid fa-trophy about-amblem" id="trophy"></i></span>
+        <div id="description_about4">
+            <h2>Acheivements</h2>
+            <ul>
+                <li>Participated in "Chess" SGFI Nationals on behalf of the Andhra Pradesh team
+                </li>
+                <li>
+                    Has <a href="https://ratings.fide.com/profile/46613790">International FIDE chess rating in </a>:
+                    <ul style="text-align:left";>
+                        <li>
+                            Classical : 1365
+                        </li>
+                        <li>
+                            Rapid : 1326
+                        </li>
+                        <li>
+                            Blitz : 1304
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Reached the final round audition for the popular singing reality show "Padutha Theeyaga"
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="strengths" class="initial ab-child">
+        <span><i class="fa-solid fa-dumbbell about-amblem" id="dumbell"></i></span>
+        <div id="description_about5">
+            <h2>I'm...</h2>
+            <ul>
+                <li>I am fluent in Telugu, English, Hindi🗣️</li>
+                <li>My core subjects are Data Structures & Algorithms💻</li>
+                <li>I am Good at Chess, Cricket, Carroms🏏</li>
+                <li>Good at problem solving🧠</li>
+                <li>An Introvert🤓</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="toggle_container">
+    <div id="toggler">
+        <div id="toggle_btn">
+            <div class="tgl_child"></div>
+            <div class="tgl_child"></div>
+            <div class="tgl_child"></div>
+            <div class="tgl_child2"></div>
+            <div class="tgl_child2"></div>
+            <div class="tgl_child2"></div>
+        </div>
+    </div>
+</div>
+<h6 class="copyright">&#169 2023 SVS SATHVIK, All rights reserved</h6>
+<!-- java script -->
+<script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+</html>

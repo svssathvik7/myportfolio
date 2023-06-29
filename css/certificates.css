@@ -1,0 +1,10 @@
+@import "common_styling.css";
+.certificates-nav{
+    color: #ffa116!important;
+    text-decoration: underline;
+}
+@media (max-width: 1023px) {
+    .certificates-nav{
+        color: #ffa116!important;
+    }
+}

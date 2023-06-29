@@ -1,0 +1,154 @@
+@import "common_styling.css";
+
+.resources-nav{
+    color: #ffa116!important;
+    text-decoration: underline;
+}
+@media (max-width:1023px)
+{
+    .resources-nav{
+        color: #ffa116!important;
+        text-decoration: underline;
+    }
+}
+#bdy.light .resources-nav{
+    text-decoration: underline;
+    transition: 0.3s linear;
+    color: black!important;
+}
+
+@media (min-width:1023px) {
+    .resources{
+        width: calc(80vw);
+        height: calc(70vh);
+        position: absolute;
+        top: 0;
+        bottom: 0;left: 0;right: 0;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #res1{
+        background-color: #fff;
+        width: calc(20vw);
+        height: calc(35vh);
+        border-radius: calc(4vw);
+        position: relative;
+    }
+    #res2{
+        background-color: #fff;
+        width: calc(20vw);
+        height: calc(35vh);
+        border-radius: calc(4vw);
+    }
+    #res3{
+        background-color: #fff;
+        width: calc(20vw);
+        height: calc(35vh);
+        border-radius: calc(4vw);
+    }
+    .resources h3{
+        color: black;
+        text-align: center;
+        padding: 5%;
+    }
+    .resources li{
+        list-style:disc;
+        color: #ffa116;
+    }
+    #res1 a{
+        color: black;
+    }
+    #res2{
+        overflow: auto;
+    }
+    #res2 a{
+        color: black;
+    }
+    #res3 a{
+        color: black;
+    }
+}
+
+@media (max-width:1024px) {
+    .resources{
+        width: calc(80vw);
+        height: calc(70vh);
+        position: absolute;
+        top: 0;
+        bottom: 0;left: 0;right: 0;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #res1{
+        background-color: #fff;
+        width: calc(60vw);
+        height: calc(20vh);
+        border-radius: calc(4vw);
+        position: relative;
+    }
+    #res2{
+        background-color: #fff;
+        width: calc(60vw);
+        height: calc(20vh);
+        border-radius: calc(4vw);
+    }
+    #res3{
+        background-color: #fff;
+        width: calc(60vw);
+        height: calc(20vh);
+        border-radius: calc(4vw);
+    }
+    .resources h3{
+        color: black;
+        text-align: center;
+        padding: 5%;
+    }
+    .resources li{
+        list-style:disc;
+        color: #ffa116;
+    }
+    #res1 a{
+        color: black;
+    }
+    #res2{
+        overflow: auto;
+    }
+    #res2 a{
+        color: black;
+    }
+    #res3 a{
+        color: black;
+    }
+}
+/* Light mode */
+#bdy.light #res1
+{
+    background-color: black;
+}
+#bdy.light #res2
+{
+    background-color: black;
+}
+#bdy.light #res3
+{
+    background-color: black;
+}
+#bdy.light .resources h3{
+    color: white;
+}
+#bdy.light #res1 a{
+    color: white;
+}
+#bdy.light #res2 a{
+    color: white;
+}
+#bdy.light #res3 a{
+    color: white;
+}

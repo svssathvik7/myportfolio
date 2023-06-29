@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/736567be33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/certificates.css">
+    <title>Skills</title>
+</head>
+<body id="bdy">
+	<header>
+        <nav>
+            <img id="portfolio" src="images/logo.jpeg">
+            <ul>
+                <li><a class="nav-elements home" href="index.html">Home</a></li>
+                <li><a class="nav-elements skills-nav" href="skills.html">Skills</a></li>
+                <li><a class="nav-elements certificates-nav" href="certificates.html">Certificates</a></li>
+                <li><a class="nav-elements projects-nav" href="projects.html">Projects</a></li>
+                <li><a class="nav-elements about-nav" href="about.html">About</a></li>
+            </ul>
+            <nav-mini>
+                <div class="navbar">
+                    <div class="menu-btn">
+                      <div class="btn-line"></div>
+                      <div class="btn-line"></div>
+                      <div class="btn-line"></div>
+                    </div>
+                </div>   
+                <div id="mini-nav">
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini home" href="index.html">Home</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini skills-nav" href="skills.html">Skills</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini certificates-nav" href="certificates.html">Certificates</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini projects-nav" href="projects.html">Projects</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <a class="nav-elements-mini about-nav" href="about.html">About</a>
+                    </div>
+                    <div class="mini-nav-child">
+                        <div class="chat-box1">
+                            <div class="containes-chat-box">
+                                <a id="feedback-click1" href="#"><i class="fa-solid fa-comments chat-btn-fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav-mini>
+        </nav>
+    </header>
+	<div class="chat-box">
+		<div class="containes-chat-box">
+			<a id="feedback-click" href="#"><i class="fa-solid fa-comments chat-btn-fa fa-2x"></i></a>
+		</div>
+	</div>
+	<div class="form" id="inp-form">
+		<div class="feedback-container">
+			<span id="close_btn_feedback"><i class="fa-solid fa-xmark"></i></span>
+			<!-- <centre> -->
+				<!-- <h2 class="#feedback_heading">Feedback Form</h2> -->
+			<!-- </centre> -->
+			<form id="feedback-form" action="submit.php" method="POST">
+			  <div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+			  </div>
+			  <div class="form-group">
+				<label for="profession">Profession</label>
+				<input type="text" id="profession" name="profession" required>
+			  </div>
+			  <div class="form-group">
+				<label for="workplace">Workplace/Study Place</label>
+				<input type="text" id="workplace" name="workplace" required>
+			  </div>
+			  <div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			  </div>
+			  <div class="form-group">
+				<label for="feedback">Feedback</label>
+				<textarea id="feedback" name="feedback" required></textarea>
+			  </div>
+			  <div class="form-group">
+				<label for="rating">Rating</label>
+				<select id="rating" name="rating" required>
+				  <option value="">Select a rating</option>
+				  <option value="5">5 stars</option>
+				  <option value="4">4 stars</option>
+				  <option value="3">3 stars</option>
+				  <option value="2">2 stars</option>
+				  <option value="1">1 star</option>
+				</select>
+			  </div>
+			  <centre>
+				  <button class="submit-btn" type="submit">Submit</button>
+			  </centre>
+			</form>
+			<div id="success-message">Thank you for your feedback!</div>
+		  </div>		  
+	</div>
+	<div class="social-media">
+		<div class="social-child"><a href="#"><i class="fa-brands fa-square-instagram icon fa-3x"></i></a></div>
+		<div class="social-child"><a href="#"><i class="fa-brands fa-linkedin icon fa-3x"></i></a></div>
+		<div class="social-child"><a href="#"><i class="fa-brands fa-github icon fa-3x"></i></a></div>
+		<div class="social-child"><a href="#"><i class="fa-solid fa-envelope icon fa-3x"></i></a></div>
+    </div>
+    <div id="toggle_container">
+      <div id="toggler">
+          <div id="toggle_btn">
+
+          </div>
+      </div>
+  </div>
+    <h6 class="copyright">&#169 2023 SVS SATHVIK, All rights reserved</h6>
+	<!-- java script -->
+	<script src="js/index.js"></script>
+</body>
+</html>

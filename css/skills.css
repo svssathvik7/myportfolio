@@ -1,0 +1,139 @@
+@import "common_styling.css";
+/* Skills container */
+.skills-container{
+    position: absolute;
+    width: calc(70vw);
+    height: calc(70vh);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: #1a1a1a;
+    flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center;
+    border-radius: 2%;
+}
+.skill-logo{
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    z-index: 5;
+    transform: translateZ(40px);
+}
+.spl-logo-xl{
+    max-width: 90%;
+}
+.spl-logo-xxl
+{
+    max-width: 78%;
+}
+.spl-logo-sm{
+    max-width: 100%;
+}
+.skill-tab{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin: 40px;
+    position: relative;
+    background-color: white;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    animation: slowshow 2s ease;
+}
+@keyframes slowshow {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@media (min-width:1023px) {
+    .skill-tab:hover .skill-logo{
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+    }
+}
+@media (max-width: 1023px) {
+    .skills-container{
+        height: 70%!important;
+    }
+    .skill-tab{
+        display: flex;
+        width: 75px;
+        height: 75px;
+        background: #fff;
+        border-radius: 10%;
+        margin: 20px;
+    }
+    .spl-mini-ver{
+        max-width: 75%;
+    }
+    .fa-star{
+        font-size: calc(0.8em);
+    }
+}
+img{
+    animation: fadein 0.3s ease;
+}
+.skills-container.active{
+    display: none;
+}
+.skills-container.active .description{
+    width: calc(40vw);
+    height: calc(30vw);
+    background-color: red;
+    color: red;
+    position: absolute;
+    top: 0;left: 0;bottom: 0;right: 0;margin: auto;
+    display: flex;
+}
+.description{
+    display: none;
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes fadeaway {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+/* Light mode */
+#bdy.light .skills-nav{
+    color: black!important;
+}
+#bdy.light .skills-container{
+    background-color: white;
+}
+#bdy.light .skill-tab{
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.8);
+}
+/* to the current page */
+#bdy .skills-nav{
+    color: #ffa116!important;
+    text-decoration: underline;
+}
+@media (max-width:1023px)
+{
+    .skills-nav{
+        color: #ffa116!important;
+    }
+}
